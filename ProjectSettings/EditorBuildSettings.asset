@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Nakata/StartScene.unity
+    guid: 8f3848ab51f76664994282efe20d1e64
+  - enabled: 1
+    path: Assets/Nakata/EggScene.unity
+    guid: e1f6802ae6fc74e4c8668650cc0ce02f
+  - enabled: 1
+    path: Assets/Nakata/IceScene.unity
+    guid: 244aa09d0376c1642b68bab15b2560c3
+  - enabled: 1
+    path: Assets/Nakata/WaterScene.unity
+    guid: b3f0ad64790c1bb40a5c92a01a470310
   m_configObjects: {}
