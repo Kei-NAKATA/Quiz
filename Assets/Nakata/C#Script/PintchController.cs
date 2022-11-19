@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PintchController : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class PintchController : MonoBehaviour
     float dist1 = 0f;
     float scale = 0f;
     float oldDist = 0f;//前回の2点間の距離
-    float minRate = 0.7f;
-    float maxRate = 3f;
+    float minRate = 0.1f;
+    float maxRate = 17.91f;
     Vector3 v = Vector3.zero;
     // Start is called before the first frame update
     void Start()
@@ -24,23 +25,6 @@ public class PintchController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount == 1)
-        {
-            Touch t1 = Input.GetTouch(0);
-            if (t1.phase == TouchPhase.Began)
-            {
-                //移動したいUIオブジェクトの最初の位置
-                startPos = transform.position;
-                //ドラッグを開始したときのマウスの位置
-                mouseStartPos = t1.position;
-            }
-            else if (t1.phase == TouchPhase.Moved)
-            {
-                //ドラッグ中のUIオブジェクトの位置
-                transform.position
-                        = startPos + (t1.position - mouseStartPos);
-            }
-        }
         if (Input.touchCount >= 2)
         {
             Touch t1 = Input.GetTouch(0);
@@ -62,11 +46,12 @@ public class PintchController : MonoBehaviour
                     v = transform.localScale;
                     scale = v.x;
                     scale += (dist1 - oldDist) / 200f;
-                    if (scale > maxRate) { scale = maxRate; }
+                    if (scale > maxRate) { SceneManager.LoadScene("BlackClearScene"); }
                     if (scale < minRate) { scale = minRate; }
                     oldDist = dist1;
                 }
                 transform.localScale = new Vector3(scale, scale, scale);
+                Debug.Log(scale);
             }
         }
     }
