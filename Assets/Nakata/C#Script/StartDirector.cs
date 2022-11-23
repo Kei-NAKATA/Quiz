@@ -26,7 +26,7 @@ public class StartDirector : MonoBehaviour
 
         if (this.delta > this.span)
         {
-            SceneManager.LoadScene("EggScene");
+            SceneManager.LoadScene("StageSelect");
         }
     }
 }
