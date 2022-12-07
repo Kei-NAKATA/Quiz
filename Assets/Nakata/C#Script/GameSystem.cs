@@ -70,7 +70,7 @@ public class GameSystem : MonoBehaviour
             {
                 //‹——£‚ª‹ß‚¢
                 float distance = Vector2.Distance(ball.transform.position, currentDraggingBall.transform.position);
-                if (distance < 1.5)
+                if (distance < 1.0)
                 {
                     AddRemoveBall(ball);
                 }
