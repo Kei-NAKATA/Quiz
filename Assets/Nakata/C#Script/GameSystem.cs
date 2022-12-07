@@ -11,6 +11,7 @@ public class GameSystem : MonoBehaviour
     ball currentDraggingBall;
     int score;
     [SerializeField] Text scoreText = default;
+    [SerializeField] GameObject clear;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,10 @@ public class GameSystem : MonoBehaviour
     {
         score += point;
         scoreText.text = score.ToString();
+        if(score >= 10000)
+        {
+            clear.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -70,7 +75,7 @@ public class GameSystem : MonoBehaviour
             {
                 //‹——£‚ª‹ß‚¢
                 float distance = Vector2.Distance(ball.transform.position, currentDraggingBall.transform.position);
-                if (distance < 1.5)
+                if (distance < 1.0)
                 {
                     AddRemoveBall(ball);
                 }
