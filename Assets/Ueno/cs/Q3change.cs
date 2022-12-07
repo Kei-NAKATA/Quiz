@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Q2change : MonoBehaviour
+public class Q3change : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,6 @@ public class Q2change : MonoBehaviour
     public void OnClick()
     {
         Debug.Log("ok.");
-        SceneManager.LoadScene("PinchiScene");
+        SceneManager.LoadScene("IceScene");
     }
 }
