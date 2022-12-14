@@ -60,6 +60,9 @@ public class GameSystem : MonoBehaviour
             ball ball = hit.collider.GetComponent<ball>();
             AddRemoveBall(ball);
             isDragging = true;
+            ball.GetComponent<SpriteRenderer>().color = Color.red;
+            ball.transform.localScale = new Vector2(1.2f, 1.2f);
+
         }
     }
 
@@ -78,6 +81,8 @@ public class GameSystem : MonoBehaviour
                 if (distance < 1.0)
                 {
                     AddRemoveBall(ball);
+                    ball.GetComponent<SpriteRenderer>().color = Color.red;
+                    ball.transform.localScale = new Vector2(1.2f, 1.2f);
                 }
             }
             
@@ -97,6 +102,11 @@ public class GameSystem : MonoBehaviour
             StartCoroutine(ballGenerator.Spawns(removeCount));
             AddScore(removeCount * 100);
             Debug.Log($"ÉXÉRÉA:{removeCount * 100}");
+        }
+        for (int i = 0; i < removeCount; i++)
+        {
+            removeBalls[i].GetComponent<SpriteRenderer>().color = Color.white;
+            removeBalls[i].transform.localScale = new Vector2(1, 1);
         }
         removeBalls.Clear();
         isDragging = false;
