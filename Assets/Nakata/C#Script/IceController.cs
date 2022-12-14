@@ -8,7 +8,7 @@ public class IceController : MonoBehaviour
     // ’Ç‰Á
     private Vector3 screenPoint;
     private Vector3 offset;
-    float hp = 10.0f;
+    float hp = 5.0f;
     float delta = 0;
 
     SpriteRenderer MainSpriteReder;
@@ -22,6 +22,11 @@ public class IceController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(this.delta > 2.0f)
+        {
+            Sprite gazo = Resources.Load<Sprite>("icemelt");
+            GameObject.Find("cube").GetComponent<UnityEngine.SpriteRenderer>().sprite = gazo;
+        }
         if (this.delta > this.hp)
         {
             SceneManager.LoadScene("WaterScene");
@@ -44,7 +49,7 @@ public class IceController : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-
+        
         this.delta += Time.deltaTime;
         Debug.Log(this.delta);
     }

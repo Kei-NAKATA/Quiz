@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class PintchController : MonoBehaviour
 {
+    [SerializeField] GameObject clear;
+
     public Vector2 startPos;
     public Vector2 mouseStartPos;
     float dist0 = 0f;
@@ -46,8 +48,13 @@ public class PintchController : MonoBehaviour
                     v = transform.localScale;
                     scale = v.x;
                     scale += (dist1 - oldDist) / 200f;
-                    if (scale > maxRate) { SceneManager.LoadScene("BlackClearScene"); }
-                    if (scale < minRate) { scale = minRate; }
+                    if (scale > maxRate) 
+                    {
+                        Sprite gazo = Resources.Load<Sprite>("niwatori");
+                        GameObject.Find("Canvas/hiyoko").GetComponent<UnityEngine.UI.Image>().sprite = gazo;
+                        clear.SetActive(true);
+                    }
+                    if (scale < minRate) scale = minRate;
                     oldDist = dist1;
                 }
                 transform.localScale = new Vector3(scale, scale, scale);
