@@ -24,8 +24,8 @@ public class IceController : MonoBehaviour
     {
         if(this.delta > 2.0f)
         {
-            Sprite gazo = Resources.Load<Sprite>("icemelt");
-            GameObject.Find("cube").GetComponent<UnityEngine.SpriteRenderer>().sprite = gazo;
+            Sprite gazo = Resources.Load<Sprite>("meltingice");
+            GameObject.Find("ice").GetComponent<UnityEngine.SpriteRenderer>().sprite = gazo;
         }
         if (this.delta > this.hp)
         {
