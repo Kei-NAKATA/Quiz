@@ -52,7 +52,7 @@ public class PintchController : MonoBehaviour
                     {
                         Sprite gazo = Resources.Load<Sprite>("niwatori");
                         GameObject.Find("Canvas/hiyoko").GetComponent<UnityEngine.UI.Image>().sprite = gazo;
-                        clear.SetActive(true);
+                        Invoke("setActive", 0.5f);
                     }
                     if (scale < minRate) scale = minRate;
                     oldDist = dist1;
@@ -61,5 +61,10 @@ public class PintchController : MonoBehaviour
                 Debug.Log(scale);
             }
         }
+    }
+
+    void setActive()
+    {
+        clear.SetActive(true);
     }
 }

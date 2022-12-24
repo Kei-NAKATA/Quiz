@@ -24,9 +24,15 @@ public class EggDirector : MonoBehaviour
 
         if (hp == 0)
         {
-            Sprite gazo = Resources.Load<Sprite>("egg2");
+            Sprite gazo = Resources.Load<Sprite>("chick");
             GameObject.Find("Canvas/Image").GetComponent<UnityEngine.UI.Image>().sprite = gazo;
-            clear.SetActive(true);
+
+            Invoke("setActive", 0.5f);
         }
+    }
+
+    void setActive()
+    {
+        clear.SetActive(true);
     }
 }

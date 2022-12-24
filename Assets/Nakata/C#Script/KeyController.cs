@@ -36,6 +36,11 @@ public class KeyController : MonoBehaviour
     {
         Sprite gazo = Resources.Load<Sprite>("opbox");
         GameObject.Find("box").GetComponent<UnityEngine.SpriteRenderer>().sprite = gazo;
+        Invoke("setActive", 0.5f);
+    }
+
+    void setActive()
+    {
         clear.SetActive(true);
     }
 }
