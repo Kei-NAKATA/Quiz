@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EggDirector : MonoBehaviour
 {
+    [SerializeField] GameObject clear;
     int hp = 10;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class EggDirector : MonoBehaviour
         {
             Sprite gazo = Resources.Load<Sprite>("egg2");
             GameObject.Find("Canvas/Image").GetComponent<UnityEngine.UI.Image>().sprite = gazo;
+            clear.SetActive(true);
         }
     }
 }

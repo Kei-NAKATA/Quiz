@@ -16,7 +16,7 @@ public class PintchController : MonoBehaviour
     float scale = 0f;
     float oldDist = 0f;//‘O‰ñ‚Ì2“_ŠÔ‚Ì‹——£
     float minRate = 0.1f;
-    float maxRate = 17.91f;
+    float maxRate = 16.0f;
     Vector3 v = Vector3.zero;
     // Start is called before the first frame update
     void Start()

@@ -25,7 +25,7 @@ public class GameSystem : MonoBehaviour
     {
         score += point;
         scoreText.text = score.ToString();
-        if(score >= 10000)
+        if(score >= 3000)
         {
             clear.SetActive(true);
         }

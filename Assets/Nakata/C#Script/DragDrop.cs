@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    [SerializeField] GameObject key;
     private Vector2 prePosition;
 
     /// <summary>
@@ -42,6 +43,12 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             {
                 transform.position = hit.gameObject.transform.position;
                 flg = false;
+                Destroy(this.gameObject);
+                Destroy(GameObject.Find("Image"));
+                Destroy(GameObject.Find("backrest"));
+                Destroy(GameObject.Find("leg3"));
+
+                key.SetActive(true);
             }
         }
 
