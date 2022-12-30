@@ -23,9 +23,60 @@ public class IntroDirector : MonoBehaviour
         count = (int)countdown;
         CountText.text = count.ToString() + " 秒後スタート";
 
-        if(countdown < 0)
+        if(SceneManager.GetActiveScene().name == "IntroScene01")
         {
-            SceneManager.LoadScene("EggScene");
+            if (countdown < 0)
+            {
+                SceneManager.LoadScene("EggScene");
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "IntroScene01")
+        {
+            if (countdown < 0)
+            {
+                SceneManager.LoadScene("EggScene");
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "IntroScene02")
+        {
+            if (countdown < 0)
+            {
+                SceneManager.LoadScene("PinchiScene");
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "IntroScene03")
+        {
+            if (countdown < 0)
+            {
+                SceneManager.LoadScene("IceScene");
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "IntroScene04")
+        {
+            if (countdown < 0)
+            {
+                SceneManager.LoadScene("MatigaeScene");
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "IntroScene05")
+        {
+            if (countdown < 0)
+            {
+                SceneManager.LoadScene("tumu");
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "IntroScene06")
+        {
+            if (countdown < 0)
+            {
+                SceneManager.LoadScene("ChairScene");
+            }
         }
     }
 }
