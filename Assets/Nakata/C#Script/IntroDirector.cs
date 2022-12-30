@@ -21,7 +21,7 @@ public class IntroDirector : MonoBehaviour
     {
         countdown -= Time.deltaTime;
         count = (int)countdown;
-        CountText.text = count.ToString() + "　秒後にスタート";
+        CountText.text = count.ToString() + " 秒後スタート";
 
         if(countdown < 0)
         {
