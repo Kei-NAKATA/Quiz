@@ -11,6 +11,7 @@ public class GameSystem : MonoBehaviour
     ball currentDraggingBall;
     int score;
     [SerializeField] Text scoreText = default;
+    [SerializeField] GameObject pointEffectPrefab = default;
     [SerializeField] GameObject clear;
 
     // Start is called before the first frame update
@@ -96,7 +97,9 @@ public class GameSystem : MonoBehaviour
                 Destroy(removeBalls[i].gameObject);
             }
             StartCoroutine(ballGenerator.Spawns(removeCount));
-            AddScore(removeCount * ParamsSO.Entity.scorePoint);
+            int score = removeCount * ParamsSO.Entity.scorePoint;
+            AddScore(score);
+            SpawnPointEffect(removeBalls[removeBalls.Count-1].transform.position, score);
             Debug.Log($"ÉXÉRÉA:{removeCount * 100}");
         }
         for (int i = 0; i < removeCount; i++)
@@ -117,5 +120,12 @@ public class GameSystem : MonoBehaviour
             ball.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
             removeBalls.Add(ball);
         }
+    }
+
+    void SpawnPointEffect(Vector2 position, int score)
+    {
+        GameObject effectObj =  Instantiate(pointEffectPrefab, position, Quaternion.identity);
+        PointEffect pointEffect = effectObj.GetComponent<PointEffect>();
+        pointEffect.Show(score);
     }
 }
