@@ -25,7 +25,7 @@ public class GameSystem : MonoBehaviour
     {
         score += point;
         scoreText.text = score.ToString();
-        if(score >= 3000)
+        if(score >= ParamsSO.Entity.clearScore)
         {
             clear.SetActive(true);
         }
@@ -60,9 +60,6 @@ public class GameSystem : MonoBehaviour
             ball ball = hit.collider.GetComponent<ball>();
             AddRemoveBall(ball);
             isDragging = true;
-            ball.GetComponent<SpriteRenderer>().color = Color.red;
-            ball.transform.localScale = new Vector2(1.2f, 1.2f);
-
         }
     }
 
@@ -81,8 +78,6 @@ public class GameSystem : MonoBehaviour
                 if (distance < ParamsSO.Entity.ballDistance)
                 {
                     AddRemoveBall(ball);
-                    ball.GetComponent<SpriteRenderer>().color = Color.red;
-                    ball.transform.localScale = new Vector2(1.2f, 1.2f);
                 }
             }
             
@@ -97,6 +92,7 @@ public class GameSystem : MonoBehaviour
         {
             for (int i = 0; i < removeCount; i++)
             {
+                removeBalls[i].Explosion();
                 Destroy(removeBalls[i].gameObject);
             }
             StartCoroutine(ballGenerator.Spawns(removeCount));
@@ -106,7 +102,7 @@ public class GameSystem : MonoBehaviour
         for (int i = 0; i < removeCount; i++)
         {
             removeBalls[i].GetComponent<SpriteRenderer>().color = Color.white;
-            removeBalls[i].transform.localScale = new Vector2(1, 1);
+            removeBalls[i].transform.localScale = Vector2.one;
         }
         removeBalls.Clear();
         isDragging = false;
@@ -117,6 +113,8 @@ public class GameSystem : MonoBehaviour
         currentDraggingBall = ball;
         if (removeBalls.Contains(ball) == false)
         {
+            ball.transform.localScale = Vector2.one * 1.3f;
+            ball.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
             removeBalls.Add(ball);
         }
     }

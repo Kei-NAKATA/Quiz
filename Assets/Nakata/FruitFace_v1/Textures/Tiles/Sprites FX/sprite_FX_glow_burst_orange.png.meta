@@ -1,82 +1,82 @@
 fileFormatVersion: 2
-guid: eac7e1cdd756b32418e2d9afd6871172
+guid: 73bf4f26825ea3a48a925e0403a5f9c0
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: sprite_arrow_atlas_0
+    second: sprite_FX_glow_burst_orange_0
   - first:
       213: 21300002
-    second: sprite_arrow_atlas_1
+    second: sprite_FX_glow_burst_orange_1
   - first:
       213: 21300004
-    second: sprite_arrow_atlas_2
+    second: sprite_FX_glow_burst_orange_2
   - first:
       213: 21300006
-    second: sprite_arrow_atlas_3
+    second: sprite_FX_glow_burst_orange_3
   - first:
       213: 21300008
-    second: sprite_arrow_atlas_4
+    second: sprite_FX_glow_burst_orange_4
   - first:
       213: 21300010
-    second: sprite_arrow_atlas_5
+    second: sprite_FX_glow_burst_orange_5
   - first:
       213: 21300012
-    second: sprite_arrow_atlas_6
+    second: sprite_FX_glow_burst_orange_6
   - first:
       213: 21300014
-    second: sprite_arrow_atlas_7
+    second: sprite_FX_glow_burst_orange_7
   - first:
       213: 21300016
-    second: sprite_arrow_atlas_8
+    second: sprite_FX_glow_burst_orange_8
   - first:
       213: 21300018
-    second: sprite_arrow_atlas_9
+    second: sprite_FX_glow_burst_orange_9
   - first:
       213: 21300020
-    second: sprite_arrow_atlas_10
+    second: sprite_FX_glow_burst_orange_10
   - first:
       213: 21300022
-    second: sprite_arrow_atlas_11
+    second: sprite_FX_glow_burst_orange_11
   - first:
       213: 21300024
-    second: sprite_arrow_atlas_12
+    second: sprite_FX_glow_burst_orange_12
   - first:
       213: 21300026
-    second: sprite_arrow_atlas_13
+    second: sprite_FX_glow_burst_orange_13
   - first:
       213: 21300028
-    second: sprite_arrow_atlas_14
+    second: sprite_FX_glow_burst_orange_14
   - first:
       213: 21300030
-    second: sprite_arrow_atlas_15
+    second: sprite_FX_glow_burst_orange_15
   - first:
       213: 21300032
-    second: sprite_arrow_atlas_16
+    second: sprite_FX_glow_burst_orange_16
   - first:
       213: 21300034
-    second: sprite_arrow_atlas_17
+    second: sprite_FX_glow_burst_orange_17
   - first:
       213: 21300036
-    second: sprite_arrow_atlas_18
+    second: sprite_FX_glow_burst_orange_18
   - first:
       213: 21300038
-    second: sprite_arrow_atlas_19
+    second: sprite_FX_glow_burst_orange_19
   - first:
       213: 21300040
-    second: sprite_arrow_atlas_20
+    second: sprite_FX_glow_burst_orange_20
   - first:
       213: 21300042
-    second: sprite_arrow_atlas_21
+    second: sprite_FX_glow_burst_orange_21
   - first:
       213: 21300044
-    second: sprite_arrow_atlas_22
+    second: sprite_FX_glow_burst_orange_22
   - first:
       213: 21300046
-    second: sprite_arrow_atlas_23
+    second: sprite_FX_glow_burst_orange_23
   - first:
       213: 21300048
-    second: sprite_arrow_atlas_24
+    second: sprite_FX_glow_burst_orange_24
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: 16
+    aniso: 0
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -122,7 +122,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 700
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -216,13 +216,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_arrow_atlas_0
+      name: sprite_FX_glow_burst_orange_0
       rect:
         serializedVersion: 2
-        x: 42
-        y: 1557
-        width: 428
-        height: 470
+        x: 0
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,13 +237,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_1
+      name: sprite_FX_glow_burst_orange_1
       rect:
         serializedVersion: 2
-        x: 554
-        y: 1557
-        width: 428
-        height: 470
+        x: 192
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,13 +258,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_2
+      name: sprite_FX_glow_burst_orange_2
       rect:
         serializedVersion: 2
-        x: 1066
-        y: 1557
-        width: 428
-        height: 470
+        x: 384
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,13 +279,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_3
+      name: sprite_FX_glow_burst_orange_3
       rect:
         serializedVersion: 2
-        x: 1578
-        y: 1557
-        width: 428
-        height: 470
+        x: 576
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,13 +300,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_4
+      name: sprite_FX_glow_burst_orange_4
       rect:
         serializedVersion: 2
-        x: 42
-        y: 1045
-        width: 428
-        height: 470
+        x: 768
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,13 +321,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_5
+      name: sprite_FX_glow_burst_orange_5
       rect:
         serializedVersion: 2
-        x: 548
-        y: 1067
-        width: 183
-        height: 425
+        x: 0
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,13 +342,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_6
+      name: sprite_FX_glow_burst_orange_6
       rect:
         serializedVersion: 2
-        x: 805
-        y: 1067
-        width: 183
-        height: 425
+        x: 192
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,13 +363,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_7
+      name: sprite_FX_glow_burst_orange_7
       rect:
         serializedVersion: 2
-        x: 1068
-        y: 1317
-        width: 425
-        height: 183
+        x: 384
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,13 +384,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_8
+      name: sprite_FX_glow_burst_orange_8
       rect:
         serializedVersion: 2
-        x: 1068
-        y: 1059
-        width: 425
-        height: 183
+        x: 576
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,13 +405,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_9
+      name: sprite_FX_glow_burst_orange_9
       rect:
         serializedVersion: 2
-        x: 39
-        y: 555
-        width: 183
-        height: 425
+        x: 768
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,13 +426,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_10
+      name: sprite_FX_glow_burst_orange_10
       rect:
         serializedVersion: 2
-        x: 296
-        y: 555
-        width: 183
-        height: 425
+        x: 0
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,13 +447,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_11
+      name: sprite_FX_glow_burst_orange_11
       rect:
         serializedVersion: 2
-        x: 559
-        y: 805
-        width: 425
-        height: 183
+        x: 192
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,13 +468,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_12
+      name: sprite_FX_glow_burst_orange_12
       rect:
         serializedVersion: 2
-        x: 1062
-        y: 555
-        width: 183
-        height: 425
+        x: 384
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,13 +489,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_13
+      name: sprite_FX_glow_burst_orange_13
       rect:
         serializedVersion: 2
-        x: 1319
-        y: 555
-        width: 183
-        height: 425
+        x: 576
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,13 +510,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_14
+      name: sprite_FX_glow_burst_orange_14
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 805
-        width: 425
-        height: 183
+        x: 768
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,13 +531,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_15
+      name: sprite_FX_glow_burst_orange_15
       rect:
         serializedVersion: 2
-        x: 559
-        y: 547
-        width: 425
-        height: 183
+        x: 0
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,13 +552,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_16
+      name: sprite_FX_glow_burst_orange_16
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 547
-        width: 425
-        height: 183
+        x: 192
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,13 +573,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_17
+      name: sprite_FX_glow_burst_orange_17
       rect:
         serializedVersion: 2
-        x: 39
-        y: 43
-        width: 183
-        height: 425
+        x: 384
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,13 +594,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_18
+      name: sprite_FX_glow_burst_orange_18
       rect:
         serializedVersion: 2
-        x: 296
-        y: 43
-        width: 183
-        height: 425
+        x: 576
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,13 +615,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_19
+      name: sprite_FX_glow_burst_orange_19
       rect:
         serializedVersion: 2
-        x: 559
-        y: 293
-        width: 425
-        height: 183
+        x: 768
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,13 +636,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_20
+      name: sprite_FX_glow_burst_orange_20
       rect:
         serializedVersion: 2
-        x: 1062
-        y: 43
-        width: 183
-        height: 425
+        x: 0
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -657,13 +657,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_21
+      name: sprite_FX_glow_burst_orange_21
       rect:
         serializedVersion: 2
-        x: 1319
-        y: 43
-        width: 183
-        height: 425
+        x: 192
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -678,13 +678,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_22
+      name: sprite_FX_glow_burst_orange_22
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 293
-        width: 425
-        height: 183
+        x: 384
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -699,13 +699,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_23
+      name: sprite_FX_glow_burst_orange_23
       rect:
         serializedVersion: 2
-        x: 559
-        y: 35
-        width: 425
-        height: 183
+        x: 576
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,13 +720,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_arrow_atlas_24
+      name: sprite_FX_glow_burst_orange_24
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 35
-        width: 425
-        height: 183
+        x: 768
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,31 +751,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sprite_arrow_atlas_16: 21300032
-      sprite_arrow_atlas_0: 21300000
-      sprite_arrow_atlas_19: 21300038
-      sprite_arrow_atlas_9: 21300018
-      sprite_arrow_atlas_21: 21300042
-      sprite_arrow_atlas_24: 21300048
-      sprite_arrow_atlas_13: 21300026
-      sprite_arrow_atlas_20: 21300040
-      sprite_arrow_atlas_14: 21300028
-      sprite_arrow_atlas_10: 21300020
-      sprite_arrow_atlas_22: 21300044
-      sprite_arrow_atlas_6: 21300012
-      sprite_arrow_atlas_5: 21300010
-      sprite_arrow_atlas_23: 21300046
-      sprite_arrow_atlas_4: 21300008
-      sprite_arrow_atlas_7: 21300014
-      sprite_arrow_atlas_12: 21300024
-      sprite_arrow_atlas_18: 21300036
-      sprite_arrow_atlas_11: 21300022
-      sprite_arrow_atlas_8: 21300016
-      sprite_arrow_atlas_3: 21300006
-      sprite_arrow_atlas_1: 21300002
-      sprite_arrow_atlas_2: 21300004
-      sprite_arrow_atlas_15: 21300030
-      sprite_arrow_atlas_17: 21300034
+      sprite_FX_glow_burst_orange_6: 21300012
+      sprite_FX_glow_burst_orange_0: 21300000
+      sprite_FX_glow_burst_orange_2: 21300004
+      sprite_FX_glow_burst_orange_4: 21300008
+      sprite_FX_glow_burst_orange_11: 21300022
+      sprite_FX_glow_burst_orange_20: 21300040
+      sprite_FX_glow_burst_orange_21: 21300042
+      sprite_FX_glow_burst_orange_24: 21300048
+      sprite_FX_glow_burst_orange_8: 21300016
+      sprite_FX_glow_burst_orange_12: 21300024
+      sprite_FX_glow_burst_orange_22: 21300044
+      sprite_FX_glow_burst_orange_7: 21300014
+      sprite_FX_glow_burst_orange_1: 21300002
+      sprite_FX_glow_burst_orange_18: 21300036
+      sprite_FX_glow_burst_orange_13: 21300026
+      sprite_FX_glow_burst_orange_17: 21300034
+      sprite_FX_glow_burst_orange_15: 21300030
+      sprite_FX_glow_burst_orange_19: 21300038
+      sprite_FX_glow_burst_orange_16: 21300032
+      sprite_FX_glow_burst_orange_3: 21300006
+      sprite_FX_glow_burst_orange_14: 21300028
+      sprite_FX_glow_burst_orange_23: 21300046
+      sprite_FX_glow_burst_orange_9: 21300018
+      sprite_FX_glow_burst_orange_10: 21300020
+      sprite_FX_glow_burst_orange_5: 21300010
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
