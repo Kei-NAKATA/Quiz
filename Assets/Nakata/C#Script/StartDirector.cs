@@ -26,7 +26,7 @@ public class StartDirector : MonoBehaviour
 
         if (this.delta > this.span)
         {
-            SceneManager.LoadScene("StageSelect");
+            SceneManager.LoadScene("tutoriall");
         }
     }
 }
